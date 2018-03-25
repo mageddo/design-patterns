@@ -23,12 +23,12 @@ public class DuckSimulator {
 		
 		System.out.println("\nLa vem um pato falso -->");
 		
-		// fazendo um ganso virar um pato pelo Padr�o Adapter
+		// fazendo um ganso virar um pato pelo Padrao Adapter
 		Quackable gansoQueVirouPato = new GooseAdapter(new Goose());
 		simulate(gansoQueVirouPato);
 		
 		
-		// resultado do Padr�o Adapter
+		// resultado do Padrao Adapter
 		System.out.printf("Ao todo %d patos fizeram Quack", QuackCounter.getQuacks());
 		
 	}
